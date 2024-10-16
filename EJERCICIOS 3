@@ -1,0 +1,413 @@
+
+1
+variable = 5
+print (variable)
+print("\n")
+
+2
+flotante = 3.14
+print(flotante)
+print("\n")
+
+3
+nombre ="Python"
+print(len(nombre))
+print("\n")
+
+4
+lista = [1, 2, 3]
+print(lista[0])
+print("\n")
+
+5
+diccionario = {'a':1, 'b':2}
+print(diccionario['a'])
+print("\n")
+
+6
+num = 4
+if num % 2 == 0:
+    print ("par")
+else:
+    print("impar")
+print("\n")
+
+7
+cadena = "hola mundo"
+if "mundo" in cadena:
+    print("contiene 'mundo'")
+print("\n")
+
+8
+num = -1
+if num > 0:
+    print("positivo")
+elif num < 0:
+    print("negativo")
+else:
+    print("cero")
+print("\n")
+
+9
+year = 2020
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print("bisiesto")
+else:
+    print("no bisiesto")
+print("\n")
+
+
+10
+num = 15
+if 1 <= num <= 10:
+    print("en el rango")
+else:
+    print("fuera de rango")
+print("\n")
+
+
+11
+for i in range (1, 6):
+    print(i, end=", ")
+    print()
+print("\n")
+
+
+12
+suma = sum(range(1, 11))
+print(suma)
+print("\n")
+
+
+13
+cuadrado = [x**2 for x in range(1, 6)]
+print(cuadrado)
+print("\n")
+
+
+14
+cadena = "hola"
+vocales = sum(1 for char in cadena.lower() if char in "aeiou")
+print(vocales)
+print("\n")
+
+
+15
+for i in range(1, 11):
+    print(3 * i, end=", ")
+    print() 
+print("\n")
+
+
+16
+lista = []
+lista.append(1)
+print(lista)
+lista.append(2)
+print(lista) 
+print("\n")
+
+
+17
+conjunto = {1, 2, 3}
+print(1 in conjunto) 
+print("\n")
+
+
+18
+diccionario = {}
+diccionario['a'] = 1
+print(diccionario)
+print("\n")
+
+
+19
+lista = [3, 1, 2]
+list.sort()
+print(lista)
+print("\n")
+
+
+20
+lista = [1, 2, 3]
+print(len(lista))
+print("\n")
+
+21
+lista = [1, 2, 3, 4, 5]
+print(sum(lista))
+print("\n")
+
+
+22
+lista = [1, 2, 3, 4, 5]
+pares = [x for x in lista if x % 2 == 0]
+print(pares)
+print("\n")
+
+
+# 23. Contar la cantidad de palabras en una cadena
+cadena = "Hola Mundo"
+cantidad_palabras = len(cadena.split()) 
+print (cantidad_palabras)
+#2
+
+# 24. Encontrar el valor máximo en una lista
+lista = [1, 3, 2]
+maximo = max(lista)
+print (maximo)
+#3
+
+# 25. Verificar si todos los elementos de una lista son verdaderos
+lista = [True, True, False]
+verdaderos = all (lista)
+print (verdaderos)
+# False
+
+# 26. Comprobar si hay al menos un elemento verdadero
+lista = [False, False, True]
+comprobar = any (lista)
+print(comprobar)
+# True
+
+# 27. Crear un nuevo diccionario a partir de dos listas
+claves = ['a', 'b', 'c']
+valores = [1, 2, 3]
+diccionario = dict(zip(claves, valores)) 
+print (diccionario)
+ # {'a': 1, 'b': 2, 'c': 3}
+
+# 28. Crear una lista de tuplas a partir de dos listas
+lista1 = [1, 2, 3]
+lista2 = ['a', 'b', 'c']
+tuplas = list(zip(lista1, lista2))  
+print(tuplas)
+# [(1, 'a'), (2, 'b'), (3, 'c')]
+
+# 29. Contar la cantidad de apariciones de un elemento en una lista
+lista = [1, 2, 1, 3]
+apariciones = lista.count(1) 
+print(apariciones)
+ #2
+
+# 30. Generar una lista de Fibonacci
+n = 5
+fibonacci = [0, 1]
+for i in range(2, n):
+    fibonacci.append(fibonacci[-1] + fibonacci[-2]) 
+    print (fibonacci)
+#[0, 1, 1, 2, 3]
+
+# 31. Reversar una lista
+lista = [1, 2, 3]
+reversa = lista[::-1] 
+print (reversa)
+ #[3, 2, 1]
+
+# 32. Concatenar dos listas
+lista1 = [1, 2]
+lista2 = [3, 4]
+concatena = lista1 + lista2 
+print (concatena)
+ #[1, 2, 3, 4]
+
+# 33. Crear una lista de números aleatorios
+import random
+aleatorio = random.sample(range(1, 11), 5)  
+print (aleatorio)
+#  Lista de 5 números entre 1 y 10
+
+# 34. Contar la cantidad de elementos en un conjunto
+conjunto = {1, 2, 3}
+cantidad = len(conjunto) 
+print (cantidad)
+ #3
+
+# 35. Crear un diccionario a partir de una lista de tuplas
+tuplas = [(1, 'a'), (2, 'b')]
+diccionario = dict(tuplas) 
+print (diccionario)
+ # {1: 'a', 2: 'b'}
+
+# 36. Obtener los elementos únicos de una lista
+lista = [1, 2, 2, 3]
+unico = list(set(lista))  
+print (unico)
+# [1, 2, 3]
+
+# 37. Verificar si un diccionario contiene una clave
+diccionario = {'a': 1}
+clave = 'a' in diccionario 
+print (clave)
+ # True
+
+# 38. Fusionar dos diccionarios
+dic1 = {'a': 1}
+dic2 = {'b': 2}
+fusionar = {**dic1, **dic2}  
+print (fusionar)
+#{'a': 1, 'b': 2}
+
+# 39. Convertir una lista en un conjunto
+lista = [1, 2, 2, 3]
+conjunto = set(lista)  
+print (conjunto)
+#  {1, 2, 3}
+
+# 40. Obtener los elementos de un diccionario en forma de lista
+diccionario = {'a': 1, 'b': 2}
+claves = list(diccionario.keys())  
+valores = list(diccionario.values())  
+print (claves, valores)
+
+# 41. Calcular la suma de los valores en un diccionario
+diccionario = {'a': 1, 'b': 2}
+valores = sum(diccionario.values())  
+print (valores)
+# Esperado: 3
+
+# 42. Filtrar un diccionario por un valor mínimo
+diccionario = {'a': 1, 'b': 2, 'c': 3}
+filtrado = {k: v for k, v in diccionario.items() if v >= 2} 
+print (filtrado)
+ # {'b': 2, 'c': 3}
+
+#######43
+cadena ="hola mundo"
+resultado = {palabra:cadena.lower().split().count(palabra.lower())
+             for palabra in set(cadena.split()) }
+print(resultado)
+
+####44
+lista1 = [1,2,3]
+lista2 = [2,3,4]
+resultado = list(set(lista1) & set(lista2))
+print(resultado)
+
+#######45
+lista1 = [1,2]
+lista2 = [1,2,3]
+resultado = set(lista1).issubset(lista2)
+print(resultado)
+
+#####46
+resultado = list(range(2,21,2))
+print(resultado)
+
+#####47
+list = [1,2,2,3]
+resultado = {n:list.count(n) for n in set(list)}
+print(resultado)
+
+#####48
+list1 = [1,2,3]
+list2 = ['a','b','c']
+resultado = [val for pair in zip(list1,list2) for val in pair]
+print(resultado)
+
+#Ejercicio 49
+# 49. Encontrar el índice de un elemento en una lista
+lista = [1, 2, 3]
+indice = lista.index(2)
+print(indice)
+
+#Ejercicio 50
+# 50. Crear un diccionario a partir de una lista de claves y valores
+claves = ['a', 'b']
+valores = [1, 2]
+diccionario = dict(zip(claves, valores))
+print(diccionario)
+
+#Ejercicio 51
+# 51. Filtrar palabras largas de una lista
+palabras = ["uno", "dos", "tres", "cuatro"]
+palabras_largas = [palabra for palabra in palabras if len(palabra) > 4]
+print(palabras_largas)
+
+#Ejercicio 52
+# 52. Crear una lista de los índices de los elementos en una lista
+lista = [10, 20, 30]
+indices = list(range(len(lista)))
+print(indices)
+
+#Ejercicio 53
+# 53. Ordenar un diccionario por sus valores
+diccionario = {'a': 3, 'b': 1, 'c': 2}
+diccionario_ordenado = dict(sorted(diccionario.items(), key=lambda item: item[1]))
+print(diccionario_ordenado)
+
+#Ejercicio 54
+# 54. Verificar si dos listas son iguales
+lista1 = [1, 2, 3]
+lista2 = [1, 2, 3]
+son_iguales = lista1 == lista2
+print(son_iguales)
+
+#Ejercicio 55
+# 55. Crear un conjunto a partir de una lista con duplicados
+lista = [1, 1, 2, 3]
+conjunto = set(lista)
+print(conjunto) 
+
+#Ejercicio 56
+# 56. Calcular el promedio de una lista
+lista = [1, 2, 3, 4, 5]
+promedio = sum(lista) / len(lista)
+print(promedio) 
+
+#Ejercicio 57
+# 57. Comprobar si una lista está vacía
+lista = []
+esta_vacia = len(lista) == 0
+print(esta_vacia) 
+#Ejercicio 58
+
+# 58. Obtener los elementos únicos de una lista manteniendo el orden
+lista = [1, 2, 2, 3]
+unicos = []
+for elemento in lista:
+    if elemento not in unicos:
+        unicos.append(elemento)
+print(unicos)
+ 
+#Ejercicio 59
+# 59. Contar las letras en una cadena
+cadena = "Hola"
+contador = {}
+for letra in cadena:
+    if letra in contador:
+        contador[letra] += 1
+    else:
+        contador[letra] = 1
+print(contador) 
+
+#Ejercicio 60
+# 60. Cambiar el valor de un elemento en un diccionario
+diccionario = {'a': 1}
+diccionario['a'] = 2  
+print(diccionario) 
+
+#Ejercicio 61
+# 61. Eliminar un elemento de una lista
+lista = [1, 2, 3]
+lista.remove(2)  
+print(lista) 
+
+#Ejercicio 62
+# 62. Repetir una cadena varias veces
+cadena = "Hola"
+resultado = cadena * 3  
+print(resultado)
+
+#Ejercicio 63
+# 63. Crear una lista de números aleatorios y ordenarla
+import random
+lista_aleatoria = [random.randint(1, 100) for _ in range(10)]
+lista_ordenada = sorted(lista_aleatoria)
+print("Lista aleatoria:", lista_aleatoria)
+print("Lista ordenada:", lista_ordenada)
+
+#Ejercicio 64
+# 64. Crear una lista de listas
+lista_de_listas = [[1, 2], [3, 4]]
+print(lista_de_listas)  
